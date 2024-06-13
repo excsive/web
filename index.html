@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#reservation">Бронирование</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#map">Карта</a></li>
+                    <li><a href="#login">Войти</a></li>
+                    <li><a href="#profile">Профиль</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="home" id="home">
+                <h1>Добро пожаловать в нашу организацию общественного питания!</h1>
+                <p>Мы предлагаем вкусные и здоровые блюда каждый день.</p>
+            </section>
+            <section id="login">
+                <h2>Войти</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    
+                    <label for="login-password">Пароль:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    
+                    <button type="submit">Войти</button>
+                </form>
+                <p>Нет аккаунта? <a href="#register">Зарегистрироваться</a></p>
+            </section>
+    
+            <section id="register">
+                <h2>Регистрация</h2>
+                <form id="register-form">
+                    <label for="register-name">Имя:</label>
+                    <input type="text" id="register-name" name="register-name" required>
+                    
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                    
+                    <label for="register-password">Пароль:</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                    
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </section>
+    
+            <section id="profile">
+                <h2>Ваш профиль</h2>
+                <div id="profile-info">
+                    <p><strong>Имя:</strong> <span id="profile-name"></span></p>
+                    <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                    <button id="logout-button">Выйти</button>
+                </div>
+            </section>
+        </main>
+
+            <section id="menu">
+                <h2>Наше Меню</h2>
+                <div class="menu-item">
+                    <img src="img/a314fb31acf79cb0df8e50b9d87692648339f436710b9a6b3d5107152e3c6415.jpg" alt="Борщ">
+                    <div>
+                        <h3>Борщ</h3>
+                        <p>Традиционный украинский суп с мясом и овощами.</p>
+                        <span>Цена: 150 руб</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/23a6e3e97069211c58790e51fe829281.jpeg" alt="Салат Цезарь">
+                    <div>
+                        <h3>Салат "Цезарь"</h3>
+                        <p>Свежие овощи с курицей и соусом Цезарь.</p>
+                        <span>Цена: 200 руб</span>
+                    </div>
+                </div>
+                <!-- Добавьте больше элементов меню по необходимости -->
+            </section>
+    
+            <section id="about">
+                <h2>О нас</h2>
+                <p>Мы - команда профессионалов, которая готовит с любовью и заботой о каждом клиенте.</p>
+            </section>
+    
+            <section id="contact">
+                <h2>Контакты</h2>
+                <form id="contact-form">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+    
+            <section id="reservation">
+                <h2>Бронирование столика</h2>
+                <form id="reservation-form">
+                    <label for="res-name">Имя:</label>
+                    <input type="text" id="res-name" name="res-name" required>
+                    
+                    <label for="res-phone">Телефон:</label>
+                    <input type="tel" id="res-phone" name="res-phone" required>
+                    
+                    <label for="res-date">Дата:</label>
+                    <input type="date" id="res-date" name="res-date" required>
+                    
+                    <label for="res-time">Время:</label>
+                    <input type="time" id="res-time" name="res-time" required>
+                    
+                    <label for="res-people">Количество человек:</label>
+                    <input type="number" id="res-people" name="res-people" required>
+                    
+                    <button type="submit">Забронировать</button>
+                </form>
+            </section>
+    
+            <section id="gallery">
+                <h2>Галерея</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item"><img src="img/35c4cbe242d7be1b19eb6c6ae11ac7f9.jpeg" alt="Image 1"></div>
+                    <div class="gallery-item"><img src="img/7dc9b0bfe7172b95aead377e29f562ab.jpg" alt="Image 2"></div>
+                    <div class="gallery-item"><img src="img/общепит.jpg" alt="Image 3"></div>
+                    <!-- Добавьте больше изображений по необходимости -->
+                </div>
+            </section>
+    
+            <section id="map">
+                <h2>Где мы находимся</h2>
+                <div id="yandex-map"></div>
+            </section>
+    
+            
+    
+        <footer>
+            <p>&copy; 2024 Организация общественного питания. Все права защищены.</p>
+        </footer>
+    </body>
+</html>
